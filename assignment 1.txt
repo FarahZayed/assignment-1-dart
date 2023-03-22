@@ -1,0 +1,153 @@
+import 'dart:math';
+
+import 'package:flutter/material.dart';
+bool isPrime(int num){
+  if(num>=2) {
+    for (int i = 2; i <= num / 2; i++) {
+      if (num % i == 0) {
+        return false;
+      }
+    }
+    return true;
+  }
+  else return false;
+
+}
+void main() {
+  //exercise 2
+  // int n = 9;//assumed
+  // if (n % 2 == 0) {
+  //   print("the number is even");
+  // }
+  // else {
+  //   print("the number is odd");
+  // }
+
+ //exercise 3
+ // var a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89];
+ //  a.forEach((a)=>{
+ //    if(a<5)
+ //      print("${a}")
+ //  });
+
+  // //exercise 4
+  // int i=2;
+  // int number =15;//assumed
+  // List<int> a=[1];
+  // while(i!=number){
+  //   if(number%i==0){
+  //     a.add(i);
+  //
+  //   }
+  //   i++;
+  // }
+  // for(int j=0;j<a.length;j++){
+  //   print("${a[j]}" );
+  // }
+  //
+
+  // //exercise 5
+  //  var a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89];
+  //  var  b = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
+  //  List <int>result=[];
+  //
+  //  for(int k=0;k<a.length;k++) {
+  //    for (int j = 0; j < b.length; j++) {
+  //      bool flag=false;
+  //      if (a[k] == b[j]) {
+  //        for (int i = 0; i < result.length; i++) {
+  //          if (result[i] == a[k]) {
+  //            flag=true;
+  //            break;
+  //          }
+  //        }
+  //        if(!flag)
+  //        result.add(a[k]);
+  //      }
+  //    }
+  //  }
+  // for(int j=0;j<result.length;j++){
+  //   print("${result[j]}" );
+  // }
+
+  // //exercise 6
+  // String s="dad";
+  // String rev="";
+  // for(int i=s.length-1;i>=0;i--){
+  //   rev=rev+s[i];
+  // }
+  // if(s.compareTo(rev)==0)
+  //   print("the string is palindrome");
+  // else
+  //   print("the string isnot palindrome");
+
+  // //exercise 7
+  // var a = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100];
+  // List<int> res=[];
+  // a.forEach((al)=>{
+  //   if(al%2==0)
+  //     res.add(al)
+  // });
+  // for(int i=0;i<res.length;i++){
+  //   print("${res[i]}" );
+  // }
+
+  // //exercise 8
+  // var possibleaction=["rock", "paper", "scissors"];
+  // String player1="paper";
+  // String player2="rock";
+  // if(player1==player2)
+  //   print ("It is a tie");
+  // else if(player1 =="rock") {
+  //   if (player2 == "scissors")
+  //     print("player 1 wins!");
+  //   else
+  //     print("player 2 wins!");
+  // }
+  // else if(player1 == "paper") {
+  //   if (player2 == "rock")
+  //     print("player 1 win!");
+  //   else {
+  //     print("player 2 win!");
+  //   }
+  // }
+  // else if(player1 == "scissors") {
+  //   if (player2 == "paper")
+  //     print("player 1 win!");
+  //   else {
+  //     print("player 2 win!");
+  //   }
+  // }
+
+  // //exercise 9
+  // Random random = new Random.secure();
+  // int randomNumber = random.nextInt(100) + 1;
+  // print("${randomNumber}");
+  // int guess=55;
+  // int count=0;
+  //
+  // if(guess==randomNumber) print("exactly");
+  // else if(guess<randomNumber) print("too low");
+  // else print ("too high");
+  //
+  // //exercise 10
+  // int num=11;
+  // if(isPrime(num))
+  //   print("it is prime");
+  // else print("it is not prime");
+
+  // //exercise 11
+  // var a = [5, 10, 15, 20, 25];
+  // List<int> b=[a[0],a[a.length-1]];
+  // for(int i=0;i<b.length;i++){
+  //     print("${b[i]}" );
+  //   }
+
+  //exercise 12
+  //
+
+
+
+
+
+} 
